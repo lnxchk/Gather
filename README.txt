@@ -1,12 +1,12 @@
-# Gather
+Gather
 
 Gather up multi-line output from a individual hosts using knife ssh
 
-## Preface
+* Preface
 
 Present all lines of output from a single host together when using parallel execution in knife ssh.
 
-## What it does
+* What it does
 
 knife gather QUERY COMMAND
 
@@ -37,5 +37,5 @@ box04.example.com:
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 
-## This is a mess, yo
+* This is a mess, yo
 Well, this one isn't horrible.  I might do something using the ui interface to the output, but this was enough to accomplish what I needed today.  Parallel knife ssh is awesome, but I hate scrolling around collating output by host.
