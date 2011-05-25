@@ -31,7 +31,7 @@ module Lnxchk
 
       file = File.open('./myfile', 'r')
       file.each_line do |line|
-        host, data = line.split(" ")
+        host, data = line.split(" ", 2)
         if mylines.has_key?(host)
           mylines[host] += "\t" + data + "\n"
         else
