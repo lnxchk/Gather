@@ -7,11 +7,11 @@ module Lnxchk
       require 'chef/mixin/command'
       require 'chef/search/query'
       require 'chef/knife/search'
-      require 'chef/knife/ssh'
+      require 'chef/knife/ssh2'
       require 'net/ssh/multi'
     end
 
-    banner "knife ssh --gather QUERY COMMAND"
+    banner "knife gather QUERY COMMAND"
 
     def run
       query = name_args[0]
@@ -46,7 +46,7 @@ module Lnxchk
         print "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
       end
       file.close
-      File.delete('./myfile') 
+#      File.delete('./myfile') 
 
     end # end run
   end # end class
