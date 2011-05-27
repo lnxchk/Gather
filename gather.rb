@@ -7,7 +7,7 @@ module Lnxchk
       require 'chef/mixin/command'
       require 'chef/search/query'
       require 'chef/knife/search'
-      require 'chef/knife/ssh2'
+      require 'chef/knife/ssh'
       require 'net/ssh/multi'
     end
 
@@ -46,7 +46,7 @@ module Lnxchk
         print "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
       end
       file.close
-#      File.delete('./myfile') 
+      File.delete('./myfile') 
 
     end # end run
   end # end class
