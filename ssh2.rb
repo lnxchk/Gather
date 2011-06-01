@@ -157,9 +157,9 @@ class Chef
 
       def print_all(lines_hash)
         lines_hash.each do |host,lines|
-          print ui.color(host, :cyan) + "\n"
-          print lines 
-          print ui.color("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", :yellow) + "\n"
+          ui.msg(ui.color(host, :cyan) + "\n")
+          ui.msg(lines)
+          ui.msg(ui.color("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", :yellow) + "\n")
         end
       end
 
